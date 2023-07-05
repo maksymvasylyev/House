@@ -17,29 +17,58 @@ body {
   position: relative;
 }
 
-#mainPart {
+#chimney {
+  position: absolute;
+  width: 27px;
+  height: 50px;
   background-color: var(--color-primary);
-  height: 140px;
-  width: var(--width-house);
-  margin: auto;
-  position: relative;
+  top: 33%;
+  left: 15%;
 }
 
 #roof {
   clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
-  width: calc(var(--width-house) + 20px);
-  height: 150px;
+  width: calc(var(--width-house) + 30px);
+  height: 170px;
   background-color: var(--color-primary);
   position: relative;
 }
 
-#chimney {
-  position: absolute;
-  width: 25px;
-  height: 60px;
+#mainPart {
   background-color: var(--color-primary);
-  top: 30%;
-  left: 15%;
+  height: 125px;
+  width: var(--width-house);
+  margin: auto;
+  position: relative;
+  margin-top: -1px;
+}
+
+#windows {
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.window {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.window__tile {
+  background-color: var(--color-dark);
+  width: 37%;
+  height: 40%;
 }
 
 #door {
