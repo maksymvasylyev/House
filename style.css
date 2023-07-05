@@ -13,9 +13,13 @@ body {
   justify-content: center;
 }
 
+#house {
+  position: relative;
+}
+
 #mainPart {
   background-color: var(--color-primary);
-  height: 150px;
+  height: 140px;
   width: var(--width-house);
   margin: auto;
   position: relative;
@@ -26,12 +30,22 @@ body {
   width: calc(var(--width-house) + 20px);
   height: 150px;
   background-color: var(--color-primary);
+  position: relative;
+}
+
+#chimney {
+  position: absolute;
+  width: 25px;
+  height: 60px;
+  background-color: var(--color-primary);
+  top: 30%;
+  left: 15%;
 }
 
 #door {
   background-color: var(--color-primaryDark);
-  width: 50px;
-  height: 80px;
+  width: 40px;
+  height: 60px;
   position: absolute;
   bottom: 0;
   margin: auto;
